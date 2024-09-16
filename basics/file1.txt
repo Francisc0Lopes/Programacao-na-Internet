@@ -1,0 +1,18 @@
+line1
+
+
+O ficheiro gitignore têm de estar o node modules
+só se comete o src
+
+instalar nodejs
+criar repositorio
+criar diretoria
+ficheiro js - console.log("Hello World")
+load "nome ficheiro js"
+
+
+tem de se compilar
+java -cp "diretoria onde estão as dependencia" "nome da class onde tem o main"
+
+git clone 
+gradle build
