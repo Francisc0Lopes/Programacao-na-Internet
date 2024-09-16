@@ -22,3 +22,6 @@ gradle build
 Situação: 2 alunos a commit no github ao mesmo tempo
 Da erro, para corrigir tem de se dar merge ou apagar e fazer commit
 ----------------------
+
+https://developer.mozilla.org/en-US/
+
