@@ -84,11 +84,13 @@ console.log(std2["studentName"])
 
 
 
-//funções 
+// FUNÇÕES 
 function f1(){
     console.log("Hello World")
 }
 f1()
+
+console.log("--------------")
 
 function f2(){
     return "Hello World"
@@ -104,6 +106,8 @@ f2.m=function(){ return "FUNC M"}
 console.log(f2.x)
 console.log(f2.m())
 
+console.log("--------------")
+
 
 function f4 (p1,p2,p3,p4){
     console.log("Start f4")
@@ -118,4 +122,60 @@ f4(1)
 f4(1,2)
 f4(1,2,3)
 f4(1,2,3,4)
+
+console.log("--------------")
+
+function f5(p1, ...rest){
+    console.log("Start f5")
+    console.log("p1 = " + p1)
+    console.log("rest = "+ rest.length)
+    console.log("rest[0] = " + rest[0])
+    console.log("rest[1] = " + rest[1])
+}
+f5()
+f5(1)
+f5(1,2)
+
+console.log("--------------")
+
+
+const newObj = {}
+newObj.f = function(){console.log("Function - F")}
+newObj.str= "STR"
+
+
+function showProps( obj){ // vai iterar pelos valores do array
+    for(let p in obj){
+        if(obj[p] instanceof Function){
+            obj[p]()
+        }
+        else{
+        console.log(p + " : " + obj[p]) // p é o nome da propriedade
+        }
+    }
+}
+showProps(newObj)
+
+
+console.log("--------------")
+
+
+
+function add(a,b){return a + b}
+function sub(a,b){return a - b}
+function mul(a,b){return a * b}
+function div(a,b){return a / b}
+function executeAndPrint(a,b,f){
+    console.log(f(a,b))
+}
+executeAndPrint(5,3,add)
+executeAndPrint(5,3,sub)
+executeAndPrint(5,3,mul)
+executeAndPrint(6,2,div)
+
+
+console.log("--------------")
+
+
+
 
