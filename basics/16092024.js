@@ -205,8 +205,49 @@ console.log(m1(1))
 console.log(m2(2))
 
 /////////////////////////////////////////////////////
-console.log("--------------")
+console.log("--------------here")
 
 /*
 ver GITHUB TPC
 */
+function filterProperties1(propNames, obj) {
+    const result = {};
+
+    for (const prop of propNames) {
+        if (obj.hasOwnProperty(prop)) {
+            result[prop] = obj[prop];
+        }
+    }
+
+    return result;
+}
+
+const o = { a: 1, b: 'Thor', c: [1, 2, 3], d: { x: 10 }, e: 2, f: 'Captain America' };
+const props = ['b', 'd', 'g', 'a'];
+const oFiltered = filterProperties1(props, o);
+console.log(oFiltered);
+// oFiltered: {a: 1, b: 'Thor', d: {x: 10}}
+
+
+
+function filterProperties(propNames, obj) {
+    return Object.fromEntries(
+        Object.entries(obj).filter(([key]) => propNames.includes(key))
+    );
+}
+
+function filterPropertiesN(propNames, objs) {
+    return objs.map(obj => filterProperties(propNames, obj));
+}
+
+// Example usage:
+const objs = [
+    { a: 1, b: 'Thor', c: [1, 2, 3], d: { x: 10 }, e: 2, f: 'Captain America' },
+    { b: 'Hulk', a: [1, 2, 3], d: { x: 10 }, e: 2, g: false },
+    { x: 'Vision', y: false }
+];
+
+const props1 = ['b', 'd', 'g', 'a'];
+const objsFiltered = filterPropertiesN(props1, objs);
+
+console.log(objsFiltered);
