@@ -76,10 +76,46 @@ function showProps( obj){ //vai iterar pelos valores do array
         console.log(p + " : " + obj[p]) // p é o nome da propriedade
     }
 }
-showProps(std3) 
+showProps(std2) 
 
 console.log(std2.studentName)       
 console.log(std2["studentName"])
 //linha 81 e 82 igual
 
-    
+
+
+//funções 
+function f1(){
+    console.log("Hello World")
+}
+f1()
+
+function f2(){
+    return "Hello World"
+}
+console.log(f2())
+
+const f = function(){ return "Hello World"}
+console.log(f())
+
+console.log(f2.name)
+f2.x="PROP X"
+f2.m=function(){ return "FUNC M"}
+console.log(f2.x)
+console.log(f2.m())
+
+
+function f4 (p1,p2,p3,p4){
+    console.log("Start f4")
+    console.log("p1 = " + p1)
+    console.log("p2 = " + p2)
+    console.log("p3 = " + p3)
+    console.log("p4 = " + p4)
+
+}
+f4()
+f4(1)
+f4(1,2)
+f4(1,2,3)
+f4(1,2,3,4)
+
