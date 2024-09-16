@@ -71,9 +71,9 @@ std2.email = "fartodisto2@gmail.com"
 console.log(std2)
 console.log(std3)
 
-function showProps( obj){
+function showProps( obj){ //vai iterar pelos valores do array
     for(let p in obj){
-        console.log(p + " : " + obj[p])
+        console.log(p + " : " + obj[p]) // p é o nome da propriedade
     }
 }
 showProps(std3) 
@@ -81,3 +81,5 @@ showProps(std3)
 console.log(std2.studentName)       
 console.log(std2["studentName"])
 //linha 81 e 82 igual
+
+    
