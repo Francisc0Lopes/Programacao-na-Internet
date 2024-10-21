@@ -1,0 +1,23 @@
+{
+  "name": "pi_work",
+  "version": "1.0.0",
+  "description": "Autor: Francisco Lopes Nº49852 LEIRT51D\r Docente: Filipe Freitas\r Descrição: A1-P1.1/script.js\r            Acredito que o trabalho proposto foi bem conseguido \r Data: 9/10/2024",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

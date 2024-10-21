@@ -1,0 +1,11 @@
+
+
+
+GET https://v3.football.api-sports.io/teams?id=227 HTTP/1.1
+x-apisports-key: a586a95bb176da3f9b67a1b9cd158871
+
+
+
+GET http://www.isel.pt HTTP/1.1
+
+
